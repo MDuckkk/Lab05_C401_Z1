@@ -28,8 +28,8 @@ Gợi ý: nếu AI sai mà user không biết → automation nguy hiểm, cân n
 
 | # | Câu hỏi | Trả lời |
 |---|---------|---------|
-| 1 | User correction đi vào đâu? | Đi vào feedback loop của chatbot: log truy vấn, kết quả AI trả lời, nút "Tìm kiếm lại", lựa chọn chuyến bay sau cùng, các case được chuyển sang nhân viên hỗ trợ, hành vi hỏi lại cùng một intent bằng từ khóa khác và session abandonment khi user rời hội thoại để tự tìm kiếm thủ công. |
-| 2 | Product thu signal gì để biết tốt lên hay tệ đi? | Conversion rate: tỷ lệ user tìm được chuyến bay đúng ý và đi đến bước đặt vé thực tế. Click-through rate: tỷ lệ user click vào kết quả chuyến bay AI trả về. Correction/fallback signal: tỷ lệ user bấm "Tìm kiếm lại", tỷ lệ chuyển sang human-in-the-loop, số lần user sửa ngày/giờ/điểm đến sau câu trả lời của AI. Feedback signal: thumbs up/down sau mỗi câu trả lời và độ khớp giữa chuyến bay AI gợi ý với chuyến bay user chọn cuối cùng. |
+| 1 | User correction đi vào đâu? | Đi vào feedback loop của chatbot: log truy vấn, kết quả AI trả lời, các case được chuyển sang nhân viên hỗ trợ, hành vi hỏi lại cùng một intent bằng từ khóa khác và session abandonment khi user rời hội thoại để tự tìm kiếm thủ công. |
+| 2 | Product thu signal gì để biết tốt lên hay tệ đi? | Re-query Rate: Tỷ lệ user phải hỏi lại câu thứ 2, thứ 3 cho cùng một nhu cầu. Time-to-Success: Thời gian từ lúc bắt đầu chat đến khi user thực hiện hành động đặt vé (càng ngắn càng tốt). |
 | 3 | Data thuộc loại nào? ☐ User-specific · ☐ Domain-specific · ☐ Real-time · ☐ Human-judgment · ☐ Khác: ___ | ☑ Real-time: lịch bay, giá vé và tình trạng chỗ thay đổi liên tục. ☑ Domain-specific: dữ liệu tuyến bay, sân bay, hạng vé, chính sách đổi/hoàn và quy định hành lý của Vietnam Airlines. ☑ Human-judgment: đánh giá thumbs up/down, lựa chọn chuyến bay cuối cùng của user và correction từ nhân viên hỗ trợ khi AI trả lời chưa đúng. |
 
 **Có marginal value không?** (Model đã biết cái này chưa? Ai khác cũng thu được data này không?)
